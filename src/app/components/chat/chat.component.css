@@ -1,0 +1,111 @@
+/* Mobile viewing is bad right now */
+
+
+/* CSS Variables */
+:root {
+    --primary-bg-color: white;
+    --secondary-bg-color: #1c1c1c;
+    --button-width: 75px;
+    --default-padding: 10px;
+    --default-margin: 30px;
+}
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    
+}
+
+/* Main Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    padding: var(--default-padding);
+}
+
+/* Messages Container */
+
+.chat__message{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+background-color: white;}
+.chat__messages {
+    flex-grow: 1;
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+    margin-bottom: var(--default-margin);
+}
+
+
+/* Common Flex Container Styles */
+.chat__input,
+.chat__options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: var(--default-padding);
+    gap: var(--default-margin);
+}
+
+/* Button Styles */
+.chat__input-button,
+.chat__options-button {
+    min-width: var(--button-width);
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    border-radius: 0 10px 10px 0;
+}
+
+.chat__options-button--danger{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chat__options-input {
+    border-radius: 10px 0 0 10px;
+    border: none;
+    height: 100%;
+}
+
+/* Textarea and Input Styles */
+.chat__input textarea,
+.chat__input input {
+    flex-grow: 1;
+    height: 100%;
+    resize: none;
+    border: none;
+    padding: var(--default-padding);
+    margin-right: var(--default-margin);
+    border-radius: 10px 0 0 10px;
+}
+
+/* Inputs Container */
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin-bottom: 10px;
+    background-color: var(--secondary-bg-color);
+    gap: 10px;
+}
+
+/* Chat Options Group */
+.chat__options-group {
+    flex: 3;
+    height: 100%;
+    text-align: center;
+}

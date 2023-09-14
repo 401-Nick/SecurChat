@@ -1,0 +1,40 @@
+.mainModule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 60vh; */
+    width: fit-content;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

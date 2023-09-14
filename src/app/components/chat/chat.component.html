@@ -1,0 +1,42 @@
+<!-- Main Chat Container -->
+<section class="chat-container">
+
+    <!-- Messages Container -->
+    <div class="chat__messages" role="list">
+        <div class="chat__message" *ngFor="let message of messages" role="listitem">
+            <h2 class="chat__message-alias">{{message.alias}}</h2>
+            <p class="chat__message-content">{{message.content}}</p>
+        </div>
+    </div>
+
+    <!-- Inputs and Options Container -->
+    <section class="inputs-container">
+
+        <!-- Chat Input -->
+        <div class="chat__input">
+            <textarea class="chat__input-textarea" [(ngModel)]="newMessage" (keydown.enter)="sendMessage()"
+                placeholder="Type a message..." aria-label="New message"></textarea>
+            <button class="chat__input-button" (click)="sendMessage()" aria-label="Send message">Send</button>
+        </div>
+
+        <!-- Chat Options -->
+        <div class="chat__options">
+            <div class="chat__options-group">
+                <input class="chat__options-input" type="text" [(ngModel)]="newAlias" (keydown.enter)="setAlias()"
+                    placeholder="Alias" aria-label="Alias">
+                <button class="chat__options-button" (click)="setAlias()" aria-label="Set alias">Set Alias</button>
+            </div>
+            <div class="chat__options-group">
+                <input class="chat__options-input" type="text" [(ngModel)]="newRoomLink"
+                    (keydown.enter)="generateLink()" placeholder="Room" aria-label="Room">
+                <button class="chat__options-button" (click)="generateLink()" aria-label="Generate room link">Generate
+                    Link</button>
+            </div>
+            <div class="chat__options-group">
+                <button class="chat__options-button chat__options-button--danger" (click)="deleteRoom()"
+                    aria-label="Delete room">Explode Room!</button>
+            </div>
+        </div>
+
+    </section>
+</section>
