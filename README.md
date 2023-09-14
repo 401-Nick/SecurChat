@@ -26,14 +26,6 @@ SecurChat is an in-development chat application focused on providing end-to-end 
 1. Copy `src/app/firebase/firebase.config.example.ts` to a new file and rename it to `./firebase.config.ts`.
 2. Replace the placeholder values with your Firebase configuration.
 
-\`\`\`typescript
-// firebase.config.ts
-export const firebaseConfig = {
-  apiKey: "YOUR_API_KEY_HERE",
-  // ...other properties
-};
-\`\`\`
-
 ### Running the Project
 
 #### Using Angular Development Server
