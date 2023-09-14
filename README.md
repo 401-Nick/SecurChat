@@ -34,17 +34,13 @@ Execute `ng serve` to start the Angular development server. Open your browser an
 
 #### Using Firebase Hosting
 
-If you prefer to use Firebase Hosting, first install the Firebase CLI if you haven't:
+To use Firebase Hosting, first install the Firebase CLI if you haven't:
 
-\`\`\`bash
-npm install -g firebase-tools
-\`\`\`
+```npm install -g firebase-tools```
 
-Then, deploy your project:
+then
 
-\`\`\`bash
-firebase deploy
-\`\`\`
+```firebase deploy```
 
 ## Live Demo
 
