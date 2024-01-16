@@ -41,7 +41,3 @@ To use Firebase Hosting, first install the Firebase CLI if you haven't:
 then
 
 ```firebase deploy```
-
-## Live Demo
-
-A demo of the app is hosted at [SecurChat Demo](https://securr-chat.web.app/home). Note that the demo currently lacks user authentication, so all permissions are restricted.
